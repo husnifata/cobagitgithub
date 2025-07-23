@@ -1,0 +1,77 @@
+body {
+  background-image: url("scale.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  background-image: linear-gradient(to right, skyblue, white);
+  padding: 10px;
+  border: 5px dotted black;
+  text-align: center;
+  font-family: "Bitcount", sans-serif;
+  animation: example 5s ease-in-out 3s infinite;
+}
+p {
+  background-image: linear-gradient(to right, white, skyblue);
+  padding: 10px;
+  border: 10px double black;
+  animation: myColorChange 5s infinite;
+}
+
+.kotak {
+  display: flex;
+}
+
+.boxsatu {
+  background-color: blue;
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: white;
+}
+
+#boxdua {
+  background-color: red;
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: white;
+  margin-left: 50px;
+}
+@keyframes example {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    trnasform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes myColorChange {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+}
